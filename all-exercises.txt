@@ -1,0 +1,179 @@
+Section 01 
+==========
+
+Task 01. 
+--------
+
+In this section, we have only taken a look at a reduced NHANES dataset. You can download a newer and full dataset from Kaggle here: 
+
+https://www.kaggle.com/moradnejad/nhanes-questionnaires-datasets-20172018-csv
+
+Go ahead and download the different CSV files from this URL and explore the data. You can re-use the notebook we have used in the videos by just changing the CSV filename at the top. Explore the different fields and calculate different metrics for different books. 
+
+Details of codebooks can be seen here for this year: 
+
+https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2017
+
+Take a look at the section "Data, Documentation, Codebooks, SAS Code". 
+
+Task 02. 
+--------
+
+Explore the different types of plots that can be created with Seaborn. A good collection is available on their official site here: 
+
+https://seaborn.pydata.org/examples/index.html
+
+While you may not understand some of the plots, it still helps to run the code given in the documentation and try to figure out the essence of the information being conveyed by each plot. You never know which plot might come in handy to explain some particularly important concepts to others in the future. 
+
+
+Brain Teaser: 
+------------- 
+
+I have fourteen pencils. (Yes, I'm THAT guy!)
+
+The mean length of the first thirteen pencils is 3 cm. The mean length of ALL the pencils is 3.5 cm. Find the length of the 14th pencil.
+
+
+Section 02 
+==========
+
+Task 01. 
+--------
+
+The Boston Housing Dataset is very popular in the field of machine learning and data sciences. It is simple enough to work with but provides a lot of insights. Take a look at the following link on Kaggle: 
+
+https://www.kaggle.com/prasadperera/the-boston-housing-dataset
+
+(You need to signup to Kaggle for downloading data but it's free and if you stay in the field of ML/DS, you will eventually have to sign up with them anyway!)
+
+Pay special attention to the plots being generated there. The heatmap plot is very useful in certain cases. 
+
+
+Section 03 
+==========
+
+Task 01. 
+--------
+
+For the following two questions, use the concept of conditional probability to calculate your results. You need to show what your new universe is before answering your question. That way, you will get a deeper understanding of this "new universe" concept. 
+
+- You flip a fair coin two times. You know that one of them was heads. What is the probability that the other one was tails.
+- Does your answer change if we change the statement to: You flip a fair coin two times. You know that the second flip was heads. What is the probability that the first one was tails?
+
+Task 02. 
+--------
+
+Imagine you are a financial analyst at an investment bank. According to your research of publicly-traded companies, 60% of the companies that increased their share price by more than 5% in the last three years replaced their CEOs during the period.
+
+At the same time, only 35% of the companies that did not increase their share price by more than 5% in the same period replaced their CEOs. Knowing that the probability that the stock prices grow by more than 5% is 4%, find the probability that the shares of a company that fires its CEO will increase by more than 5%.
+
+
+Task 03. 
+--------
+
+Not really a task but watch this excellent video on visualization of Bayes rule here: https://www.youtube.com/watch?v=HZGCoVF3YvM (I'm not affiliated with the channel but his videos are amazing, in case you haven't seen them before.)
+
+
+Section 04 
+==========
+
+Task 01. 
+--------
+
+You have a coin that, when flipped, has the probability 0.72 of coming up heads. You flip the coin 10 times. What is the probability that it will come up heads an even number of times? There are several ways of doing this. You may use any method you like! 
+ 
+(If you get stuck, don't worry and move on to the next section. There, we will discuss a method that makes this really easy!)
+
+Task 02. 
+-------- 
+
+If you have the equation n-choose-2 = 465, what is the value for n? 
+
+
+Task 03. 
+--------
+Pascal's triangle is very closely related to the binomial theorem. Take a look at the triangle and figure out how it relates to the different expansions of the binomial theorem. 
+
+Task 04. 
+--------
+
+How many ways are there to arrange 3 chocolate chip cookies and 10 raspberry cheesecake cookies into a row of 13 cookies?
+
+
+Section 05 
+==========
+
+Task 01. 
+--------
+
+A 6-sided, fair die is rolled two times. We define two random variables based on the outcome of these two rolls: 
+
+X: The maximum of the two dice roll values 
+Y: The sum of the two values 
+
+Create the joint probability table of X and Y. 
+
+In the table, also write the marginal values of both X and Y and then PLOT the marginal distributions of both X and Y separately. 
+
+
+Task 02. 
+--------
+
+Try the same example as above. Change the definition of the random variable Y to be: The difference between the two throws. See what difference that makes to your analysis. 
+
+
+Task 03. 
+--------
+
+If you have done the above two tasks using pen-and-paper, try to write code for them. This is a very good exercise for translating models to code. 
+
+
+
+Section 06 
+==========
+
+Task 01. 
+--------
+
+The purpose of this section was to get you familiarized with visualizations. As we discussed in the video, the more you practice, the more you can internalize these concepts. 
+
+So, take a look at the different contour plot examples from matplotlib here: 
+
+https://matplotlib.org/3.1.1/gallery/images_contours_and_fields/contour_demo.html
+
+For slightly more involved examples, see here: 
+
+https://jakevdp.github.io/PythonDataScienceHandbook/04.04-density-and-contour-plots.html
+
+
+
+Section 07 
+==========
+
+Task 01.
+--------
+You should be able to code the KL-divergence example yourself. You only need to loop over the values given for a distribution and apply the KL-divergence formula.
+
+However, if you need help with code, you can try out the tutorial given here: 
+
+https://towardsdatascience.com/kl-divergence-python-example-b87069e4b810
+
+Minimizing KL-divergence can be thought of as optional (though useful) part of this tutorial. The rest of the visualizations are pretty useful. 
+
+
+Task 02. 
+--------
+
+If you liked the decision tree case study and would like to take it further, the next step is turning this sinlge tree into a "random forest". This is a very powerful model that removes the limitations of decision trees. Take a look at this excellent article on the topic with great visualizations:
+
+https://jakevdp.github.io/PythonDataScienceHandbook/05.08-random-forests.html
+
+
+Task 03.
+--------
+
+Take a look at this excellent article about outlier detection from the PyMC3 documentation. If you use Ordinary Least Squares (OLS), outliers really mess up your prediction of the trend. The essence of the article is that you can fix this issue simply by changing your prior from a normal distribution to a student-t distribution. I have personally applied this simple fix to some state-of-the-art models and achieved extremely good (published) results. 
+
+https://docs.pymc.io/notebooks/GLM-robust-with-outlier-detection.html
+
+View the code at least. The figures are pretty much self-explanatory even without the text. Go ahead and modify your notebook from this course to model the data generated in the article and see how you do "robust linear regression". 
